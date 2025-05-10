@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: gateway-api-test
   name: gateway-api-test
@@ -11,10 +10,8 @@ spec:
   selector:
     matchLabels:
       app: gateway-api-test
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: gateway-api-test
     spec:
@@ -23,5 +20,3 @@ spec:
         name: nginx
         ports:
         - containerPort: 80
-        resources: {}
-status: {}
