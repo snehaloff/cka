@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: gateway-api-test
+  name: gateway-api-test
+  namespace: gateway-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway-api-test
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: gateway-api-test
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

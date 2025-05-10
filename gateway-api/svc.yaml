@@ -3,15 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: nginx
-  name: nginx-svc
+    app: gateway-api-test
+  name: svc-gateway
+  namespace: gateway-test
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: nginx
-  type: ClusterIP
+    app: gateway-api-test
+  type: CLusterIP
 status:
   loadBalancer: {}
