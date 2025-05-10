@@ -25,7 +25,7 @@ spec:
   - matches:
     - path:
         type: PathPrefix
-        value: /login
+        value: "/"
     backendRefs:
     - name: my-gateway
       port: 80
