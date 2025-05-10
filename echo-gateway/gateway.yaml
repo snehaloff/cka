@@ -24,7 +24,7 @@ spec:
   - matches:
     - path:
         type: PathPrefix
-        value: /echo
+        value: "/echo"
     backendRefs:
     - name: iso-svc
       port: 80
