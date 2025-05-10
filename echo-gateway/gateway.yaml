@@ -17,7 +17,7 @@ metadata:
   name: example-httproute
 spec:
   parentRefs:
-  - name: example-gateway
+  - name: isolated-gateway
   hostnames:
   - "isolated.192.168.97.24.nip.io"
   rules:
