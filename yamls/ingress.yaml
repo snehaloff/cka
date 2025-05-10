@@ -16,5 +16,5 @@ spec:
             name: nginx-svc
             port:
               number: 80
-        path: /echo
+        path: /apple
         pathType: Prefix
