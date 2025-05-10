@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: echo-app
+  name: echo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echo-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: echo-app
+    spec:
+      containers:
+      - image: dfinissygroup/nginx-echo:latest
+        name: nginx-echo
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
