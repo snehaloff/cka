@@ -1,13 +1,18 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-gateway
-  namespace: gateway-test
+  creationTimestamp: null
+  labels:
+    app: my-gateway
+  name: my-gateway
+  namespace: my-gateway
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: gateway-api-test
-  type: CLusterIP
+    app: my-gateway
+  type: ClusterIP
+status:
+  loadBalancer: {}
