@@ -18,7 +18,7 @@ spec:
         app: echo-app
     spec:
       containers:
-      - image: dfinissygroup/nginx-echo:latest
+      - image: adfinissygroup/nginx-echo
         name: nginx-echo
         ports:
         - containerPort: 80
