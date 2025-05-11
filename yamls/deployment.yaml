@@ -18,7 +18,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
+      - image: adfinissygroup/nginx-echo
         name: nginx
         ports:
         - containerPort: 80
